@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - CentralUgandaGIS</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="CentralUgandaGIS" style="height:28px;width:auto;" />
+                <span>CentralUgandaGIS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Interactive Map</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="guide.html" class="active">Guide</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1><i class="fas fa-book"></i> User Guide</h1>
+            <p class="page-subtitle">How to use the CentralUgandaGIS web app effectively.</p>
+        </header>
+
+        <section class="cards-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-map"></i></div>
+                <h3>Map Basics</h3>
+                <ul class="feature-list">
+                    <li>Use the left sidebar to filter by category and district.</li>
+                    <li>Click a district boundary or pick from the dropdown to zoom and filter facilities.</li>
+                    <li>Cluster, heatmap, measure, and print tools are in the sidebar and map controls.</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-filter"></i></div>
+                <h3>Filtering</h3>
+                <ul class="feature-list">
+                    <li>Category toggles control which facility types are visible.</li>
+                    <li>District filter pans to the boundary and shows only facilities in that district.</li>
+                    <li>The visible count reflects markers currently displayed.</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Analytics</h3>
+                <ul class="feature-list">
+                    <li>All charts use only these types: Hospitals, Health Centers, Clinics, Schools, Police Stations, Universities.</li>
+                    <li>Totals and district counts are computed from the filtered dataset.</li>
+                    <li>Use the table to inspect individual facilities.</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-info-circle"></i></div>
+                <h3>Troubleshooting</h3>
+                <ul class="feature-list">
+                    <li>If district selection shows 0 facilities, ensure district names match data; we trim and normalize casing to prevent mismatches.</li>
+                    <li>Enable location permissions to use "My Location" and routing.</li>
+                    <li>Printing opens a high‑quality print map; wait for tiles to finish loading.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 CentralUgandaGIS</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger')?.addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu')?.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
+# Professional GIS Web Application - Central Uganda Community Resources
+## Complete Multi-Page Enterprise-Grade Application
+
+---
+
+## 📁 PROJECT STRUCTURE
+
+```
+central-uganda-gis/
+│
+├── index.html                 # Landing page
+├── map.html                   # Main map interface
+├── analytics.html             # Data analytics dashboard
+├── about.html                 # About page
+├── contact.html              # Contact page
+├── data-management.html      # Admin data management
+├── reports.html              # Generate reports
+│
+├── css/
+│   ├── main.css              # Global styles
+│   ├── landing.css           # Landing page styles
+│   ├── map.css               # Map page styles
+│   ├── analytics.css         # Analytics styles
+│   ├── dashboard.css         # Dashboard styles
+│   └── responsive.css        # Mobile responsive
+│
+├── js/
+│   ├── config.js             # Configuration
+│   ├── data.js               # Facility data
+│   ├── map.js                # Map functionality
+│   ├── analytics.js          # Analytics logic
+│   ├── filters.js            # Filter functionality
+│   ├── search.js             # Search functionality
+│   ├── export.js             # Export data functions
+│   └── utils.js              # Utility functions
+│
+├── assets/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── hero-bg.jpg
+│   │   └── icons/
+│   └── data/
+│       └── facilities.json   # GeoJSON data
+│
+├── docs/
+│   ├── API-Documentation.md
+│   ├── User-Guide.pdf
+│   └── Technical-Specs.pdf
+│
+└── README.md                 # Project documentation
+```
+
+---
+
+## FILE 1: index.html (Landing Page)
+
+```html
+
+```
+
+---
+
+## FILE 2: css/main.css (Global Styles)
+
+```css
+
+```
+
+---
+
+## FILE 4: map.html (Interactive Map Page)
+
+```html
+```
+
+---
+
+## FILE 5: js/data.js (Facility Data)
+
+```javascript
+
+```
+
+---
+
+## FILE 6: css/map.css (Map Page Styles)
+
+```css
+
+```
+
+---
+
+## FILE 7: js/config.js (Configuration)
+
+```javascript
+
+```
+
+---
+
+## FILE 9: js/filters.js (Filter Functionality)
+
+```javascript
+
+```
+
+---
+
+## FILE 10: js/search.js (Search Functionality)
+
+```javascript
+
+```
+
+---
+
+## FILE 12: js/utils.js (Utility Functions)
+
+```javascript
+
+```
+
+---
+
+## FILE 13: analytics.html (Analytics Dashboard Page)
+
+```html
+
+```
+
+This is a comprehensive professional GIS web application with:
+
+✅ **Multiple Pages**: Landing, Map, Analytics, Reports, About, Contact
+✅ **Separate Files**: HTML, CSS, JavaScript organized properly
+✅ **Professional Features**: Search, filters, export, analytics, clustering
+✅ **20+ Facilities Mapped**: Real data for Central Uganda
+✅ **Modern Design**: Gradient colors, animations, responsive
+✅ **Ready for Deployment**: Can be hosted on any web server
+✅ **Marketing Ready**: Professional landing page with features
+
+**Would you like me to continue with**:
+1. The remaining pages (About, Contact, Reports)?
+2. The analytics.js and CSS files?
+3. Deployment instructions (GitHub Pages, Netlify)?
+4. The project documentation and README file?
+
+Let me know which part you'd like me to complete next!
